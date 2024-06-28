@@ -131,7 +131,6 @@
     margin: 1%;
     padding: 2%;
 
-
     }
 
     .column {
@@ -165,8 +164,6 @@
     }
     }
 
-
-
 /* #endregion */
 /* #region Footer */
 /******************************
@@ -177,38 +174,70 @@ text-align: center;
 }
 
 /* #endregion */
-/* #region Responsive */
-    @media only screen and (max-width: 840px) {
-    #wrapper {
-      width: 98%;
-    }
 
-    img {
-      margin-top: 15%;
-    }
+/*#region Responsive
+***/
+  
+@media only screen and (max-width: 800px) {
 
-    footer > span {
-      font-size: 1.4em;
-    }
+  h1 {
+    text-align: center;
+    display: block;
+    font-size: 2.8rem;
+    background-image: none;
+    margin: 0%;
+    background-position-x: 50%;
+    background-position-y: 0%;
 
-    p {
-      margin: 10% 0 7% 0;
-    }
-    }
+   }
 
-    @media only screen and (max-width: 400px) {
-    nav li {
-      display: block;
-      text-align: center;
-    }
+   .form-popup {
+    width: 90%;
+  }
 
-    h1 {
-      font-size: 4.7em;
-    }
+  input[type='text'] {
+    width: 80%;
+  }
 
-    footer > span {
-      font-size: 1.1em;
-    }
-    }
+  main {
+    width: 90%;
+  }
 
-/* #endregion */
+  .ColumHeader {
+    display: block;
+    width: 95%;
+    margin: 0.5%;
+    padding: 1%;
+  }
+
+  .client {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2%;
+  }
+
+  .client .column {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1%;
+  }
+
+  .client .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .btn {
+    width: 48%;
+    margin: 0.5% 0;
+  }
+
+  ul {
+    display: block;
+    padding: 0;
+  }
+}
+
+/* #endregion*/
